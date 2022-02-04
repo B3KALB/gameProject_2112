@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    margin-top: -40%;
+}
+.headerText {
+    font-size: 3em;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: gold;
+    margin-left: 1%;
+    margin-right: 15%;
+} 
+
+.theRebellion {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color: red;
+    height: 50%;
+    width: 55%;
+}
+
+.theEmpire {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color:white;
+    height: 40%;
+    width: 25%;
+    margin-right: 15%;
+}
+
+#whoWon {
+    color: lightgray;
+    margin-bottom: 10%;
+}
+
+.scoreBoard {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 2em;
+}
+
+.rebelScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: lime;
+}
+
+.empireScore{
+    display: flex;
+    flex-direction: row;
+    color:white; 
+}
+
+#board {
+    font-size: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    background-image: url("https://i.pinimg.com/originals/2b/e0/58/2be058a4232206831cfa4e6963a46df1.jpg");
+    height: 25vw;
+    width: 25vw;
+    color: gold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:black;
+}
+
+#rebelImage {
+    background-image: url("https://i.pinimg.com/originals/a4/cf/5c/a4cf5cccdc393f2095b7499f4779ad52.png");
+    background-size: contain;
+    width: 110px;
+    height: 123px;
+    margin: 5px;
+}
+
+#empireImage {
+    background-image: url("https://i.pinimg.com/originals/a4/cf/5c/a4cf5cccdc393f2095b7499f4779ad52.png");
+    background-size: contain;
+    width: 110px;
+    height: 123px;
+    margin: 5px;
+}
+ 
+#deathStarSurface {
+width: 25vw;
+height: 25vw;
+}
+
+.surrender {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#surrenderButton{
+    color: white;
+    margin-top: 4%;
+    background-color:red;
+    border-radius: 10px;
+    border: 10px double black;
+    text-align: center;
+    font-size: 1.25em;
+    width: fit-content;
+}
+
+#surrenderButton:hover {
+  background-color: lightgray;
+  color: black;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1 >
+        <img class="theRebellion" id="theRebellion" src="https://www.logolynx.com/images/logolynx/f5/f56537b6dc40e351e6dab875b270ebdd.png" alt="The Rebellion">
+        <br>
+        <p class="headerText">
+        TIC
+        <br> 
+        TAC
+        <br>
+        TOE
+        </p>
+        <br>
+        <img class="theEmpire" id="theEmpire" src="https://icon-library.com/images/star-wars-empire-icon/star-wars-empire-icon-9.jpg" alt="The Empire">
+    </h1>
+    <h2 id="strategy"></h2>
+    <div class="scoreBoard" >
+        <!-- <p class="rebelScore">
+            Score:<span id="rebelCount">0</span>
+        </p> -->
+        <br><span id="whoWon"></span>
+        <!-- <p class="empireScore" id="empireScore">
+            Score:<span id="empireCount">0</span>
+        </p> -->
+    </div>
+
+    <div>
+        <div id="board">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div> 
+                <div class="box" id="2"></div> 
+                <div class="box" id="3"></div> 
+                <div class="box" id="4"></div> 
+                <div class="box" id="5"></div> 
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+        </div>
+    </div>
+    <div class="surrender">
+        <button type="reset" id="surrenderButton">SURRENDER!</button>
+    </div>
+  </div>
+</body>
+</html>
