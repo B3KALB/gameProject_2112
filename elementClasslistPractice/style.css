@@ -1,0 +1,15 @@
+.bold { 
+    font-weight: bold;
+}
+
+.redBg {
+    background-color: red;
+}
+
+.whiteText {
+    color: white;
+}
+
+.bigFont {
+    font-size: 36px;
+}

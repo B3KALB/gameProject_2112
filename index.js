@@ -1,6 +1,7 @@
 const boxes = document.querySelectorAll('.box');
-// const rebelImage = document.querySelectorAll('#rebelImage')
-// const empireImage = document.querySelectorAll('#empireImage')
+//const boxID = document.querySelectorAll('#boxID');
+// const rebelImage = document.querySelectorAll('.rebelImage')
+// const empireImage = document.querySelectorAll('.empireImage')
 const text = document.querySelector('#whoWon');
 const strategy = document.querySelector('#strategy');
 const restartBtn = document.querySelector('#surrenderButton');
@@ -11,6 +12,9 @@ const tick_circle = 'Rebels';
 const tick_x = 'Empire';
 let currentPlayer = tick_circle;
 
+let empireCount = 0;
+let rebelCount = 0;
+
 //board listeners
 const drawBoard = () => {
   boxes.forEach((box, i) => {
@@ -20,28 +24,37 @@ const drawBoard = () => {
   });
 };
 
-const boxClicked = (e) => {
-  const id = e.target.id;
-  console.log(e);
-  if (!spaces[id]) {
-    console.log(spaces[id]);
-    spaces[id] = currentPlayer;
-    e.target.innerText = currentPlayer;
-    //playerWon helper function
-    if (playerWon()) {
-      text.innerText = `${currentPlayer} won!`;
-      //slow down?
-      restart();
-      return;
-    }
-    //playerDraw helper function
-    if (playerDraw()) {
-      return;
-    }
-    currentPlayer = currentPlayer === tick_circle ? tick_x : tick_circle;
-  }
-};
 
+// if(spaces[id] !== tick_circle) {
+//     boxes.classList.replace('#boxID','.rebelImage');
+// } else {
+//     boxes.classList.replace('#boxID','.empireImage');
+// }
+
+
+
+const boxClicked = (e) => {
+    const id = e.target.id;
+        console.log(e);
+        if (!spaces[id]) {
+            console.log(spaces[id]);
+            spaces[id] = currentPlayer;
+            e.target.innerText = currentPlayer;
+            //playerWon helper function
+            if (playerWon()) {
+                text.innerText = `${currentPlayer} won!`;
+                //slow down?
+                restart();
+                return;
+            }
+            //playerDraw helper function
+            if (playerDraw()) {
+                return;
+            }
+            currentPlayer = currentPlayer === tick_circle ? tick_x : tick_circle;
+        } 
+};
+    
 //boolean logic
 const playerWon = () => {
   //wins top
@@ -116,7 +129,7 @@ const restart = () => {
       box.innerText = "";
     });
     //whoWon line
-    text.innerText = ` `;
+    text.innerText = `VS`;
     //strategy line
     strategy.innerText = ``;
   }, 1000);

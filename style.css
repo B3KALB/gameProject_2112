@@ -100,20 +100,24 @@ h1 {
     -webkit-text-stroke-color:black;
 }
 
-#rebelImage {
+.rebelImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
     background-image: url("https://i.pinimg.com/originals/a4/cf/5c/a4cf5cccdc393f2095b7499f4779ad52.png");
-    background-size: contain;
-    width: 110px;
-    height: 123px;
-    margin: 5px;
+    width: 25vw;
+    height: 25vw;
 }
 
-#empireImage {
+.empireImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
     background-image: url("https://i.pinimg.com/originals/a4/cf/5c/a4cf5cccdc393f2095b7499f4779ad52.png");
-    background-size: contain;
-    width: 110px;
-    height: 123px;
-    margin: 5px;
+    width: 25vw;
+    height: 25vw;
 }
  
 #deathStarSurface {
@@ -141,3 +145,4 @@ height: 25vw;
 #surrenderButton:hover {
   background-color: lightgray;
   color: black;
+}
